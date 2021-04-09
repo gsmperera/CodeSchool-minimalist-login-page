@@ -8,6 +8,79 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    
+    <!--container-->
+    <div class="container">
+        <!--heading-->
+        <div class="head">
+            <h2>CodeSchool</h2>
+        </div>
+        <!--Card for forms-->
+        <div class="card">
+            <!--For table toggle-->
+            <input type="radio" id="tog1" name="select">
+            <input type="radio" id="tog2" name="select">
+            <!--Tabs-->
+            <div class="tabs">
+                <!--Buttons-->
+                <div class="btns">
+                    <div class="si">
+                        <a href="#" class="signIn"><label for="tog1">Sign In</label></a>
+                        <div class="highlightSi"></div>
+                    </div>
+                    <div class="su">
+                        <a href="#" class="signUp"><label for="tog2">Sign Up</label></a>
+                        <div class="highlightSu"></div>
+                    </div>
+                </div>
+                <!--Line-->
+                <div class="line"></div>
+            </div>
+            <!--Form section-->
+            <div class="frms">
+                <!--Sign In forms-->
+                <form action="" class="sifrm">
+                    <div class="ui">
+                        <label>User Name :</label>
+                        <input type="text">
+                    </div>
+                    <div class="ui">
+                        <label>Password :</label>
+                        <input type="password">
+                    </div>
+                    <label class="remember">
+                        <input type="checkbox">
+                        <span>Remember Password</span>
+                    </label>
+                    <a href="#" class="fbtns">Sign In</a>
+                    <label class="forgot">
+                        <a href="#">Forgot Password</a>
+                    </label>
+                </form>
+                <!--Sign up forms-->
+                <form action="" class="sufrm">
+                    <div class="ui">
+                        <label>User Name :</label>
+                        <input type="text">
+                    </div>
+                    <div class="ui">
+                        <label>Email :</label>
+                        <input type="text">
+                    </div>
+                    <div class="ui">
+                        <label>Password :</label>
+                        <input type="password">
+                    </div>
+                    <a href="#" class="fbtns">Sign Up</a>
+                    <label for="">
+                        <span>or sign up using</span>
+                        <a href="#">
+                            <img src="sources/google-icon.svg" alt="google-icon">
+                            <span>Google</span>
+                        </a>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
