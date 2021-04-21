@@ -5,82 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSchool</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!--container-->
-    <div class="container">
-        <!--heading-->
-        <div class="head">
-            <h2>CodeSchool</h2>
-        </div>
-        <!--Card for forms-->
-        <div class="card">
-            <!--For table toggle-->
-            <input type="radio" id="tog1" name="select">
-            <input type="radio" id="tog2" name="select">
-            <!--Tabs-->
-            <div class="tabs">
-                <!--Buttons-->
-                <div class="btns">
-                    <div class="si">
-                        <a href="#" class="signIn"><label for="tog1">Sign In</label></a>
-                        <div class="highlightSi"></div>
-                    </div>
-                    <div class="su">
-                        <a href="#" class="signUp"><label for="tog2">Sign Up</label></a>
-                        <div class="highlightSu"></div>
-                    </div>
-                </div>
-                <!--Line-->
-                <div class="line"></div>
-            </div>
-            <!--Form section-->
-            <div class="frms">
-                <!--Sign In forms-->
-                <form action="" class="sifrm">
-                    <div class="ui">
-                        <label>User Name :</label>
-                        <input type="text">
-                    </div>
-                    <div class="ui">
-                        <label>Password :</label>
-                        <input type="password">
-                    </div>
-                    <label class="remember">
-                        <input type="checkbox">
-                        <span>Remember Password</span>
-                    </label>
-                    <a href="#" class="fbtns">Sign In</a>
-                    <label class="forgot">
-                        <a href="#">Forgot Password</a>
-                    </label>
-                </form>
-                <!--Sign up forms-->
-                <form action="" class="sufrm">
-                    <div class="ui">
-                        <label>User Name :</label>
-                        <input type="text">
-                    </div>
-                    <div class="ui">
-                        <label>Email :</label>
-                        <input type="text">
-                    </div>
-                    <div class="ui">
-                        <label>Password :</label>
-                        <input type="password">
-                    </div>
-                    <a href="#" class="fbtns">Sign Up</a>
-                    <label for="">
-                        <span>or sign up using</span>
-                        <a href="#">
-                            <img class="icon" src="sources/google-icon.svg" alt="google-icon">
-                            <span>Google</span>
-                        </a>
-                    </label>
-                </form>
-            </div>
+<body onload="ucMsg()">
+    <div class="modeTogContainer">
+        <div class="ovel">
+            <button class="circle"></button>
         </div>
     </div>
+    <h1>CodeSchool</h1>
+    <p>Coding For Better World</p>
+    <div class="logContainer">
+        <nav class="navBar">
+            <ul>
+                <li class="labelSI isBold"><input type="radio" id="siTogBtn" name="btnTog"><label for="siTogBtn">Sign In</label></li>
+                <li class="labelSU isLight"><input type="radio" id="suTogBtn" name="btnTog"><label for="suTogBtn">Sign Up</label></li>
+            </ul>
+            <div class="highlightContainer">
+                <div class="highlightSI"></div>
+                <div class="highlightSU visHidden"></div>
+            </div>
+            <div class="line"></div>
+        </nav>
+        <form>
+            <div class="inputField">
+                <label for="userNameSI">User Name :</label>
+                <input type="text">
+            </div>
+            <div class="inputField">
+                <label for="pwSI">Password :</label>
+                <input type="text">
+            </div>
+            <div class="pwField">
+                <input type="checkbox" id="rememberSI">
+                <label for="rememberSI">Remember Password</label>
+            </div>
+            <button id="loginBtn">Login</button>
+            <a href="#">Forgot Password</a>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
 </body>
 </html>

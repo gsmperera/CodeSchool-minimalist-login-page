@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root {
+    --light: #fff;
+    --dark: #707070;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    background-color: var(--light);
+    font-size: 0.9em;
+}
+
+/****** Dark Mode Togle Button ******/
+.modeTogContainer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.modeTogContainer .ovel {
+    width: 30px;
+    height: 20px;
+    background-color: var(--dark);
+    border-radius: 11px;
+    border: 2px solid var(--dark);
+    box-sizing: content-box;
+}
+.modeTogContainer .ovel .circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--light);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+.modeTogContainer .ovel .circle:hover  {
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+p {
+    margin-bottom: 20px;
+}
+.logContainer {
+    width: 310px;
+    height: 300px;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/****** Navigation Bar ******/
+.navBar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.navBar ul li input[type="radio"] {
+    display: none;
+}
+.navBar ul li label {
+    cursor: pointer;
+}
+.navBar .highlightContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navBar .highlightContainer .highlightSI,
+.navBar .highlightContainer .highlightSU {
+    width: 100px;
+    height: 5px;
+    background-color: var(--dark);
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+}
+.navBar .line {
+    width: 100%;
+    border-top: 1px solid var(--dark);
+}
+
+/****** Form *****/
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form .inputField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+form .inputField:first-child {
+    margin-top: 30px;
+}
+form .pwField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+form .pwField label {
+    cursor: pointer;
+}
+form .pwField #rememberSI {
+    margin-right: 5px;
+}
+form #loginBtn {
+    margin-top: 30px;
+}
+form a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--dark);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+form input[type="text"] {
+    width: 170px;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd;
+    padding-left: 10px;
+}
+form input[type="text"]:focus {
+    outline: none;
+    border: 1px solid var(--dark);
+}
+form button {
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: var(--light);
+    background-color: var(--dark);
+    font-size: 1em;
+}
+
+.visHidden {
+    visibility: hidden;
+}
+.disNone {
+    display: none;
+}
+.isBold {
+    font-weight: 600;
+}
+.isLight {
+    font-weight: 400;
+}
