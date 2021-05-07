@@ -22,7 +22,7 @@
     <!-- Container -->
     <div class="logContainer">
         
-        <!-- Sign in and Sign up tabs-->
+        <!-- Sign in and Sign up tabs -->
         <nav class="navBar">
             <ul>
                 <!-- Sign in button -->
@@ -38,21 +38,42 @@
         </nav>
         
         <!-- Sign In form -->
-        <form>
+        <form id="loginForm">
             <div class="inputField">
                 <label for="userNameSI">User Name :</label>
                 <input type="text">
             </div>
             <div class="inputField">
                 <label for="pwSI">Password :</label>
-                <input type="text">
+                <input type="password">
             </div>
             <div class="pwField">
                 <input type="checkbox" id="rememberSI">
                 <label for="rememberSI">Remember Password</label>
             </div>
-            <button id="loginBtn">Login</button>
+            <button id="loginBtn">Log In</button>
             <a href="#">Forgot Password</a>
+        </form>
+
+        <!-- Sign Up form -->
+        <form id="signInForm">
+            <div class="inputField">
+                <label for="userNameSU">User Name :</label>
+                <input type="text">
+            </div>
+            <div class="inputField">
+                <label for="emailSU">Email :</label>
+                <input type="email">
+            </div>
+            <div class="inputField">
+                <label for="pwSU">Password :</label>
+                <input type="password">
+            </div>
+            <button id="signinBtn">Sign In</button>
+            <div class="googleSU">
+                <p>Or sign up using</p>
+                <a href="#"><img class="googleIcon" src="sources/google-icon.svg" alt="Google">Google</a>
+            </div>
         </form>
     </div>
 

@@ -60,6 +60,7 @@ p {
     border: 1px solid var(--dark);
     border-radius: 10px;
     padding: 10px 20px;
+    overflow: hidden;
 }
 
 /****** Navigation Bar ******/
@@ -123,6 +124,9 @@ form .pwField #rememberSI {
 form #loginBtn {
     margin-top: 30px;
 }
+form #signinBtn {
+    margin-top: 30px;
+}
 form a {
     display: flex;
     justify-content: center;
@@ -131,7 +135,9 @@ form a {
     margin-top: 5px;
     margin-bottom: 30px;
 }
-form input[type="text"] {
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
     width: 170px;
     height: 25px;
     margin-left: 10px;
@@ -140,7 +146,9 @@ form input[type="text"] {
     background-color: #ddd;
     padding-left: 10px;
 }
-form input[type="text"]:focus {
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
     outline: none;
     border: 1px solid var(--dark);
 }
@@ -153,6 +161,27 @@ form button {
     color: var(--light);
     background-color: var(--dark);
     font-size: 1em;
+}
+form .googleSU {
+    width: 95%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+form .googleSU a {
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .googleSU a img {
+    margin-right: 5px;
+}
+.googleIcon {
+    width: 20px;
+    height: 20px;
 }
 
 .visHidden {
