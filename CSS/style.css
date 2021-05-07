@@ -161,9 +161,9 @@ form button {
 .disNone {
     display: none;
 }
-.isBold {
-    font-weight: 600;
-}
 .isLight {
     font-weight: 400;
+}
+.isBold {
+    font-weight: 600;
 }

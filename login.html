@@ -7,26 +7,37 @@
     <title>CodeSchool</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="ucMsg()">
+<body>
+    <!-- Dark mode toggle button -->
     <div class="modeTogContainer">
         <div class="ovel">
             <button class="circle"></button>
         </div>
     </div>
+
+    <!-- Title -->
     <h1>CodeSchool</h1>
     <p>Coding For Better World</p>
+    
+    <!-- Container -->
     <div class="logContainer">
+        
+        <!-- Sign in and Sign up tabs-->
         <nav class="navBar">
             <ul>
+                <!-- Sign in button -->
                 <li class="labelSI isBold"><input type="radio" id="siTogBtn" name="btnTog"><label for="siTogBtn">Sign In</label></li>
+                <!-- Sign up button -->
                 <li class="labelSU isLight"><input type="radio" id="suTogBtn" name="btnTog"><label for="suTogBtn">Sign Up</label></li>
             </ul>
             <div class="highlightContainer">
-                <div class="highlightSI"></div>
-                <div class="highlightSU visHidden"></div>
+                <div id="highlightSI" class="highlightSI"></div>
+                <div id="highlightSU" class="highlightSU visHidden"></div>
             </div>
             <div class="line"></div>
         </nav>
+        
+        <!-- Sign In form -->
         <form>
             <div class="inputField">
                 <label for="userNameSI">User Name :</label>
