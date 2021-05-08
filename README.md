@@ -1,5 +1,11 @@
-# CodeSchool-minimalist-login-page
-minimalist sign up page UI and development.
+# CodeSchool minimalist login page
 
-<img src="https://raw.githubusercontent.com/gsmperera/CodeSchool-minimalist-login-page/main/sources/sign%20in%20page%20light%20mode.jpg" width=500px>
-<img src="https://github.com/gsmperera/CodeSchool-minimalist-login-page/blob/main/sources/loged%20in%20page%20light%20mode.jpg?raw=true" width=500px>
+Minimalist sign in, sign up page UI and development.
+
+## Light mode
+<img src="https://raw.githubusercontent.com/gsmperera/CodeSchool-minimalist-login-page/main/sources/login%20light%20mode.jpeg" width=500px>
+<img src="https://raw.githubusercontent.com/gsmperera/CodeSchool-minimalist-login-page/main/sources/signup%20light%20mode.jpeg" width=500px>
+
+## Dark mode
+<img src="https://raw.githubusercontent.com/gsmperera/CodeSchool-minimalist-login-page/main/sources/login%20dark%20mode.jpeg" width=500px>
+<img src="https://raw.githubusercontent.com/gsmperera/CodeSchool-minimalist-login-page/main/sources/signup%20dark%20mode.jpeg" width=500px>

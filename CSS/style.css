@@ -44,8 +44,15 @@ body {
     outline: none;
     border: none;
 }
+.modeTogContainer .ovel .circle:focus  {
+    background-color: var(--light);
+}
 .modeTogContainer .ovel .circle:hover  {
-    background-color: #ddd;
+    background-color: #bbb;
+    cursor: pointer;
+}
+.modeTogContainer .dmTogged {
+    transform: translateX(10px);
 }
 
 h1 {
