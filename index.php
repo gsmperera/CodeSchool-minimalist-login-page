@@ -37,7 +37,7 @@
             <div class="line"></div>
         </nav>
         
-        <!-- Sign In form -->
+        <!-- Log In form -->
         <form id="loginForm">
             <div class="inputField">
                 <label for="userNameSI">User Name :</label>
@@ -56,27 +56,48 @@
         </form>
 
         <!-- Sign Up form -->
-        <form id="signInForm">
+        <form id="signInForm" action="includes/signup.inc.php" method="POST">
             <div class="inputField">
                 <label for="userNameSU">User Name :</label>
-                <input type="text">
+                <input type="text" name="uname">
             </div>
             <div class="inputField">
                 <label for="emailSU">Email :</label>
-                <input type="email">
+                <input type="text" name="uemail">
             </div>
             <div class="inputField">
                 <label for="pwSU">Password :</label>
-                <input type="password">
+                <input type="password" name="upass">
             </div>
-            <button id="signinBtn">Sign In</button>
+            <button id="signinBtn" type="submit" name="btnSignUp">Sign In</button>
             <div class="googleSU">
                 <p>Or sign up using</p>
                 <a href="#"><img class="googleIcon" src="sources/google-icon.svg" alt="Google">Google</a>
             </div>
         </form>
     </div>
-
     <script src="login.js"></script>
+    <div class="php">
+        <?php
+            include "includes/dbh.inc.php";
+
+            // check whether 'signup' included in url
+            if(!isset($_GET['signup'])) {
+                exit();
+            } else {
+                // store whatever comes after the 'signup='
+                $msg = $_GET['signup'];
+
+                // check msg
+                if ($msg == "empty") {
+                    echo "<p class='php-error'>Please fill all input fields!</p>";
+                } else if ($msg == "invalidemail") {
+                    echo "<p class='php-error'>Invalid email!</p>";
+                } else if ($msg == "success") {
+                    echo "<p class='php-success'>Signed up successfully!</p>";
+                }
+            }
+        ?>
+    </div>
 </body>
 </html>

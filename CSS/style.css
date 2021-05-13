@@ -48,7 +48,6 @@ body {
     background-color: var(--light);
 }
 .modeTogContainer .ovel .circle:hover  {
-    background-color: #bbb;
     cursor: pointer;
 }
 .modeTogContainer .dmTogged {
@@ -191,6 +190,23 @@ form .googleSU a img {
     height: 20px;
 }
 
+/****** PHP *****/
+.php {
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    display: flex;
+}
+.php .php-success {
+    color: green;
+    margin-left: 5px;
+}
+.php .php-error {
+    color: red;
+    margin-left: 5px;
+}
+
+/****** Comman ******/
 .visHidden {
     visibility: hidden;
 }
